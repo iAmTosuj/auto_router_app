@@ -10,7 +10,7 @@ class TabsPage extends StatelessWidget {
     return AutoTabsScaffold(
       routes: const [
         HomeRoute(),
-        AppointmentRoute(),
+        AppointmentTestRoute(),
         FavouritesRoute(),
       ],
       bottomNavigationBuilder: (_, tabsRouter) {
