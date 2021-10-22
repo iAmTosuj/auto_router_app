@@ -10,13 +10,15 @@ class TabsPage extends StatelessWidget {
     return AutoTabsScaffold(
       routes: const [
         HomeRoute(),
-        AppointmentTestRoute(),
+        AppointmentRoute(),
         FavouritesRoute(),
       ],
-      bottomNavigationBuilder: (_, tabsRouter) {
+      bottomNavigationBuilder: (BuildContext context, TabsRouter tabsRouter) {
         return BottomNavigationBar(
           currentIndex: tabsRouter.activeIndex,
-          onTap: tabsRouter.setActiveIndex,
+          onTap: (index) {
+            tabsRouter.setActiveIndex(index);
+          },
           items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.book),
