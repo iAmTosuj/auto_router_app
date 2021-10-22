@@ -1,16 +1,22 @@
 # auto_router_project
 
-A new Flutter project.
+Навигация, которая загонет меня в гроб.
 
-## Getting Started
+Для тестирования диплинков можно использовать команду
 
-This project is a starting point for a Flutter application.
+`adb shell am start -a android.intent.action.VIEW  -c android.intent.category.BROWSABLE -d 'fooderlich://raywenderlich.com/appointment/123'`
 
-A few resources to get you started if this is your first Flutter project:
+Чтобы всё заработало необходимо находиться в папке с adb, либо прописывать путь до него. Данная шляпа находится в `Android/sdk/platform-tools/adb`
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Сейчас всё с божей помощью заработало, но под вопросом остаётся ещё множество кейсов.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Самый главный вопрос, навигация во flutter реально такая сложная? или я тупой?
+
+В дальнейшем необходимо реализовать.
+
+1. Авторизация
+2. Создание кода входа
+3. Подтверждение кода входа
+4. Диплинк на нужную страницу с деталями (записи/отзывов)
+
+идимо будет необходимо обрабатывать большую часть роутов в ручную и в довесок писать глобальный стейт роутов, чтобы они нормально переключались между друг дружкой и была возможность выйти из приложения.
