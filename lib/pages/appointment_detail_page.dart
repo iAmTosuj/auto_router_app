@@ -9,6 +9,8 @@ class AppointmentDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('Appointment detail page $id')));
+    return Scaffold(
+        backgroundColor: Colors.lightBlue,
+        body: Center(child: Text('Appointment detail page $id')));
   }
 }
