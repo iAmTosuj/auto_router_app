@@ -30,8 +30,6 @@ class MyApp extends StatelessWidget {
                     ]
                   ],
               onNavigate: (url, _) {
-                state.clearAppointment();
-
                 if (url.segments.isEmpty) {
                   return;
                 }
