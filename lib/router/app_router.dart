@@ -15,10 +15,10 @@ import 'package:auto_router_project/pages/tabs_page.dart';
     AutoRoute(page: TabsPage, path: '/', initial: true, children: [
       AutoRoute(page: FavouritesPage, path: 'favourite'),
       AutoRoute(page: HomePage, path: 'home'),
-      AutoRoute(page: AppointmentPage, path: 'appointment', fullMatch: true),
+      AutoRoute(page: AppointmentPage, path: 'appointment'),
     ]),
     AutoRoute(
-        page: AppointmentDetailPage, path: '/appointment/:id', fullMatch: true),
+        page: AppointmentDetailPage, path: '/appointment/:id'),
   ],
 )
 class $AppRouter {}
