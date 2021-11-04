@@ -69,10 +69,9 @@ class AppRouter extends _i8.RootStackRouter {
               path: 'favourite', parent: TabsRoute.name),
           _i8.RouteConfig(HomeRoute.name, path: 'home', parent: TabsRoute.name),
           _i8.RouteConfig(AppointmentRoute.name,
-              path: 'appointment', parent: TabsRoute.name, fullMatch: true)
+              path: 'appointment', parent: TabsRoute.name)
         ]),
-        _i8.RouteConfig(AppointmentDetailRoute.name,
-            path: '/appointment/:id', fullMatch: true)
+        _i8.RouteConfig(AppointmentDetailRoute.name, path: '/appointment/:id')
       ];
 }
 
